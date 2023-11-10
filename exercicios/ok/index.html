@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>titulo principal do site</h1>
+        <nav>
+            <a href="#">item 01</a>
+            <a href="#">item 02</a>
+            <a href="#">item 03</a>
+        </nav>
+    </header>
+    <main>
+        <section class="principal">
+            <h1 class="titulo-principal">titulo principal do artico/pagina</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ratione laudantium animi dolores praesentium quo tenetur soluta sapiente! A eligendi et sit laudantium amet, in qui ratione dignissimos quas ipsum!</p>
+            <div class="concontainer">
+                <div class="container">
+                    <div class="item item1">item 1</div>
+                    <div class="item item2">item 2</div>
+                    <div class="item item3">item 3</div>
+                    <div class="item item4">item 4</div>
+                </div>
+                <div class="container">
+                    <div class="item item5">item 5</div>
+                    <div class="item item6">item 6</div>
+                    <div class="item item7">item 7</div>
+                    <div class="item item8">item 8</div>
+                </div>
+                <div class="container">
+                    <div class="item item9">item 9</div>
+                    <div class="item item10">item 10</div>
+                    <div class="item item11">item 11</div>
+                    <div class="item item12">item 12</div>
+                </div>
+            </div>
+            <div id="form">
+                <input type="number" placeholder="digite um numero" id="n1">
+                <input type="number" placeholder="digite um numero" id="n2">
+                <button onclick="apertou()" id="apertou">aperte</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> texto super aleatorio para teste</p>
+    </footer>
+    <script>
+
+        let item = document.querySelectorAll('.item')[0]
+        let btn = document.getElementById('apertou')
+        let n1 = document.getElementById('n1')
+        let n2 = document.getElementById('n2')
+        
+        let item1 = document.querySelectorAll('.item')[0]  
+        let item2 = document.querySelectorAll('.item')[1]  
+        let item3 = document.querySelectorAll('.item')[2]  
+        let obj = {
+            t1 : item1,
+            t2 : item2,
+            t3 : item3
+        }
+        
+        function apertou(){
+            
+            
+            
+
+            
+            /* 
+            let n = Number(n1.value)
+            console.log(`o tipo é ${typeof n} e o valor é ${n}`)
+
+            let n = Number(n1.value) // nao sei pq mas a variavel que transforma o numero TEM que estar dentro da função nao qual sera utilizada
+            alert(`o tipo é ${typeof Number(n1.value)} e o valor é ${Number(n1.value)}`)
+             */
+
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="idade.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div class="form" id="form">
+            <div class="ano__container">
+                <label for="ano">Ano de Nascimento</label>
+                <input type="number" name="ano" id="ano">
+            </div>
+            <div class="genero__container">
+                <label for="genero">Sexo:</label>
+                <input type="radio" name="genero" id="genero-m" value="M" checked><label for="genero-m">Masculino</label>
+                <input type="radio" name="genero" id="genero-f" value="F"><label for="genero-f">Feminino</label>
+                <input type="radio" name="genero" id="naobinari" value="wtf"><label for="naobinari">Não Binário</label>
+            </div>
+        </div>
+        <div class="botoes">
+            <button id="verificar">Verificar</button>
+            <button id="limpar">Limpar</button>
+        </div>
+        <div class="res" id="res"></div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>    
+    <script src="idade.js"></script>
+</body>
+</html>
