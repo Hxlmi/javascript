@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(126, 126, 221);
+    font: normal 18px Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.493);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: start;
+}
+
+.form label{
+    font-size: 1.3rem;
+    font-family: monospace,'Courier New', Courier ;
+    font-weight: bold;
+    width: 80px;   
+    text-align: right;
+}
+
+.form input {
+    padding: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* labels */
+.numIni {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.numFim {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.passo {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+/* inputs */
+#numIni {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#numFim {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#passo {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+/* button */
+.contar{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    justify-self: start;
+    padding: .25rem .5rem;
+}
+
+.spanRes::after {
+    content: attr(data-content);
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+

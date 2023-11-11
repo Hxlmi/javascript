@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo do Exercicio</title>
+    <link rel="stylesheet" href="contador.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+        <div class="form" id="form">
+            <label for="numIni" class="numIni">Início:</label><input type="number" name="numIni" id="numIni" >
+            <label for="numFim" class="numFim">Final:</label><input type="number" name="numFim" id="numFim"  >
+            <label for="passo" class="passo">Passo:</label><input type="number" name="passo" id="passo" >
+        </div>
+        <button onclick="contar()" class="contar">Contar</button>
+        <div class="res" id="res">
+            <span>Preparando contagem...</span>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>    
+    <script src="contador.js">
+        
+    </script>
+</body>
+</html>
