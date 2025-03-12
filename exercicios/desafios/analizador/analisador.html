@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo do Exercicio</title>
+    <link rel="stylesheet" href="analisador.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div class="entrada">
+            <label for="numero">Número (Entre 1 e 100)</label>
+            <input type="number" name="numero" id="numero" autofocus>
+            <button id="addbtn">Adicionar</button>
+        </div>
+        <div class="produto">
+            <select name="res" id="res" size="10"></select><br>
+            <button id="finish">Finalizar</button>
+        </div>
+        <div class="finishBox">
+            <p class="totalNum"></p>
+            <p class="highValue"></p>
+            <p class="lowValue"></p>
+            <p class="sum"></p>
+            <p class="average"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>    
+    <script src="analisador.js"></script>
+</body>
+</html>
